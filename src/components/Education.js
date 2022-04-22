@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import '../styles/Education.css';
 
 class Education extends Component {
     constructor(props){
@@ -6,9 +7,14 @@ class Education extends Component {
         this.state = {
             "institutionEd": "NDU",
             "degreeEd": "Master",
-            "periodEd": "2012-2022",
-        }
-    }
+            "periodEd": "2012-2022"
+        };
+        this.handleChange = this.handleChange.bind(this);
+    };
+
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
+    };
     
     render(){
         return(

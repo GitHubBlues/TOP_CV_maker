@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import '../styles/Personal.css';
 
 class Personal extends Component {
     constructor(props){
@@ -19,6 +20,7 @@ class Personal extends Component {
     render(){
     return (
         <div className="component-personal">
+            <h2>Personal Information</h2>  
             <label> Name:           
                 <input onChange={this.handleChange} className="personal-name" type="text" value={this.state.nameP} name="nameP" />
             </label>
