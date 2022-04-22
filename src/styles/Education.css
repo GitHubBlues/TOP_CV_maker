@@ -1,0 +1,25 @@
+.component-education {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.edu-institution,
+.edu-degree,
+.edu-period {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    font-size: large;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+label {
+    display: flex;
+    font-weight: 600;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    align-items: center;
+}
