@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TOP_CV_maker/static/css/main.ee2ebaea.css",
+    "main.js": "/TOP_CV_maker/static/js/main.ef004e47.js",
+    "index.html": "/TOP_CV_maker/index.html",
+    "main.ee2ebaea.css.map": "/TOP_CV_maker/static/css/main.ee2ebaea.css.map",
+    "main.ef004e47.js.map": "/TOP_CV_maker/static/js/main.ef004e47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2ebaea.css",
+    "static/js/main.ef004e47.js"
+  ]
+}
