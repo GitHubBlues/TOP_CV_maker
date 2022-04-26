@@ -5,9 +5,9 @@ class Education extends Component {
     constructor(props){
         super(props);
         this.state = {
-            "institutionEd": "NDU",
+            "institutionEd": "NYU",
             "degreeEd": "Master",
-            "periodEd": "2012-2022"
+            "periodEd": "2019-2022"
         };
         this.handleChange = this.handleChange.bind(this);
     };

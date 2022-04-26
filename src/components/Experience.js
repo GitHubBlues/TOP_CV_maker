@@ -7,7 +7,7 @@ class Experience extends Component {
         this.state = {
             "companyEx": "Sony",
             "titleEx": "CEO",
-            "periodEx": "period"
+            "periodEx": "2010-2020"
         };
         this.handleChange = this.handleChange.bind(this);
     }; 

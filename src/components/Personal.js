@@ -5,9 +5,9 @@ class Personal extends Component {
     constructor(props){
         super(props);
         this.state = {
-            "nameP": "Andi",
-            "emailP": "aa",
-            "phoneP": "123"
+            "nameP": "Andi Nolan",
+            "emailP": "superandi2@gmail.com",
+            "phoneP": "+32 000 123"
         };
         this.handleChange = this.handleChange.bind(this);
 
