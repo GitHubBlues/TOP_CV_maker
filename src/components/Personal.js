@@ -1,38 +1,35 @@
-import React, {Component} from "react";
+import React, { useState, useEffect} from "react";
 import '../styles/Personal.css';
 
-class Personal extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            "nameP": "Andi",
-            "emailP": "aa",
-            "phoneP": "123"
-        };
-        this.handleChange = this.handleChange.bind(this);
+const Personal = () => {
+  const [nameP, setName] = useState("Lia Nolan");
+  const [emailP, setEmail] = useState("lianolan88@gmail.com");
+  const [phoneP, setPhone] = useState("+23 555 89456");
 
-    };   
+  function handleChange(event){
+    if (event.target.name === "nameP") {
+       setName(event.target.value);
+    } else if (event.target.name === "emailP") {
+        setEmail(event.target.value);
+    } else if (event.target.name === "phoneP") {
+        setPhone(event.target.value);
+    }    
+  };  
 
-    handleChange(event) {
-        this.setState({ [event.target.name]: event.target.value });
-    };
-
-    render(){
-    return (
-        <div className="component-personal">
-            <h2>Personal Information</h2>  
-            <label> Name:           
-                <input onChange={this.handleChange} className="personal-name" type="text" value={this.state.nameP} name="nameP" />
-            </label>
-            <label> Email:           
-                <input onChange={this.handleChange} className="personal-email" type="text" value={this.state.emailP} name="emailP" />
-            </label>
-            <label> Phone:           
-                <input onChange={this.handleChange} className="personal-phone" type="text" value={this.state.phoneP} name="phoneP" />
-            </label>
-        </div>
-    );
-    }
+  return (
+    <div className="component-personal">
+        <h2>Personal Information</h2>  
+        <label> Name:           
+            <input onChange={handleChange} className="personal-name" type="text" value={nameP} name="nameP" />
+        </label>
+        <label> Email:           
+            <input onChange={handleChange} className="personal-email" type="text" value={emailP} name="emailP" />
+        </label>
+        <label> Phone:           
+            <input onChange={handleChange} className="personal-phone" type="text" value={phoneP} name="phoneP" />
+        </label>
+    </div>
+  );
 };
 
 export default Personal;
